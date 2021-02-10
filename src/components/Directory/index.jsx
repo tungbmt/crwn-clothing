@@ -31,11 +31,11 @@ class Directory extends Component {
         linkUrl: 'shop/women',
       },
       {
-        title: 'mens',
+        title: 'men',
         imageUrl: '/images/men.png',
         size: 'large',
         id: 5,
-        linkUrl: 'shop/mens',
+        linkUrl: 'shop/men',
       },
     ],
   }
@@ -43,8 +43,8 @@ class Directory extends Component {
   render() {
     return (
       <div className='directory-menu'>
-        {this.state.sections.map(({ title, id, imageUrl, size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+        {this.state.sections.map(({ id, ...props }) => (
+          <MenuItem key={id} {...props} />
         ))}
       </div>
     )
