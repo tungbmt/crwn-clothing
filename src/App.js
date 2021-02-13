@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Route, Switch, useRouteMatch } from 'react-router-dom'
-import './App.scss'
-
+import { Route, Switch } from 'react-router-dom'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
 import ShopPage from './pages/ShopPage/ShopPage'
 import SignInPage from './pages/SignInPage/SignInPage'
 import { auth, createUserProfileDocument } from './firebase/firebase'
+import './App.scss'
 
 class App extends Component {
   state = {
