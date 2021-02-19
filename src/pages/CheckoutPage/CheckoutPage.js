@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import CheckoutItem from '../../components/CheckoutItem/CheckoutItem'
 import {
-  selectCartItems,
-  selectCartTotal,
+  cartItemsSelector,
+  cartTotalSelector,
 } from '../../redux/cart/cart.selectors'
 import './CheckoutPage.scss'
 
@@ -38,8 +38,8 @@ const CheckoutPage = ({ cartItems, total }) => (
 )
 
 const mapStateToProps = createStructuredSelector({
-  cartItems: selectCartItems,
-  total: selectCartTotal,
+  cartItems: cartItemsSelector,
+  total: cartTotalSelector,
 })
 
 export default connect(mapStateToProps)(CheckoutPage)
