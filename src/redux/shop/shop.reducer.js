@@ -70,7 +70,7 @@ const INITIAL_STATE = {
         },
       ],
     },
-    sneaker: {
+    sneakers: {
       id: 2,
       title: 'Sneakers',
       routeName: 'sneakers',
