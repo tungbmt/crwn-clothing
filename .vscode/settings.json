@@ -1,7 +1,3 @@
 {
-  "cSpell.words": [
-    "firestore",
-    "middlewares",
-    "persistor"
-  ]
+  "cSpell.words": ["firestore", "middlewares", "persistor", "signin"]
 }
