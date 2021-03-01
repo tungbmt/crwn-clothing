@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.scss'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
-
 import { store, persistor } from './redux/store'
 import reportWebVitals from './reportWebVitals'
 
