@@ -4,10 +4,10 @@ import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
 import ShopPage from './pages/ShopPage/ShopPage'
 import SignInPage from './pages/SignInPage/SignInPage'
-import './App.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { checkUserSession } from './redux/user/user.actions'
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage'
+import './App.scss'
 
 const App = () => {
   const dispatch = useDispatch()
