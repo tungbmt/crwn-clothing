@@ -1,17 +1,12 @@
 require('dotenv').config()
 const express = require('express')
-const cors = require('cors')
 const path = require('path')
 
 const { NODE_ENV, PORT = 5000, STRIPE_SECRET_KEY } = process.env
 
 const stripe = require('stripe')(STRIPE_SECRET_KEY)
 
-const middlewares = [
-  cors(),
-  express.json(),
-  express.urlencoded({ extended: true }),
-]
+const middlewares = [express.json(), express.urlencoded({ extended: true })]
 
 const app = express()
 
